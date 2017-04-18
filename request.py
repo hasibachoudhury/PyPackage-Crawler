@@ -7,7 +7,7 @@ URL = "https://pypi.python.org/simple/"
 HREF_REGEX = r"<a href=\'(.*?)\'>"
 # {distribution}-{version}(-{build tag})?-{python tag}-{abi tag}-{platform tag}.whl .
 WHL_REGEX = r">([\w\d.]+)-([\w\d.]+)-?[\w\d.]*?-([\w\d.]+)-([\w\d.]+)-([\w\d.]+)\.whl<"
-CHUNK_SIZE = 500
+CHUNK_SIZE = 200
 
 # Create the table and indexes on all the columns
 def create_table_and_indices(cursor):
